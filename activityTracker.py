@@ -9,7 +9,7 @@ from datetime import datetime
 def track_active_window():
     current_window = None
     start_time = datetime.now()
-    csv_filename = 'activity_log'
+    csv_filename = 'activity_log.csv'
 
     file_exists = os.path.isfile(csv_filename)
     if not file_exists or os.stat(csv_filename).st_size == 0:
